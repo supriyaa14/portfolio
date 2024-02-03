@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.bio-box {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  perspective: 600px;
+}
+
+.box-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #eee;
+  background-image: url(./assets/images/a3.jpg);
+}
+
+figcaption {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+.class{
+  color: aquamarine;
+  background-color: aquamarine;
+}
+
+</style>
+</head>
+<title>Personal Portfolio Website</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+      
+        <ul id="sidemenu">
+          <li><a href="#s0">Home</a></li>
+          <li><a href="#s1">About</a></li>
+          <li><a href="#s2">Skills</a></li>
+          <li><a href="#su3">Projects</a></li>
+          <li><a href="#s4">Services</a></li>
+          <li><a href="#s5">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class ="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+     
+        <p><span style="color: rgb(255, 0, 0);">Web Developer</span></p>
+        <h1>Hi, I'm <span>Supriyaa</span><br>From Kanchipuram</h1><br>
+        <h6 style="color: grey; font-style: italic;" >To be employed by a company that will enable me to use my abilities, pick up new knowledge, gain experience from the industry, and contribute to
+          that. I'd like to know more about the newest technologies as well.
+          </h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---about-->
+<section id="s1">
+  <div id="about">
+   
+    <div class="container">
+        <div class="row">
+      <div class="about-col-1">
+       
+        <img src="./assets/images/b3.jpg">
+      </div>
+      <!---box--->
+      <div class="bio-box">
+        <div class="box-face front">
+          <figcaption>
+            <h2 class="name"><span style="color: skyblue;">Supriyaa.D</span></h2>
+            <ul>
+              <li ><span style="color: rgb(251, 0, 255);">Date of Birth:</span>14/09/2003 </li>
+              <li ><span style="color: rgb(251, 0, 255);">Age:</span> 21</li>
+              <li><span style="color: rgb(251, 0, 255);">Mother Tongue:</span>Telugu</li>
+              <li><span style="color: rgb(251, 0, 255);">Home Town:</span> Kanchipuram</li>
+              <li><span style="color: rgb(251, 0, 255);">Current Place:</span> Chennai</li>
+              <li><span style="color: rgb(251, 0, 255);">Blood Group:</span>B+ve</li>
+            <li><span style="color: rgb(251, 0, 255);">Siblings:</span> 2</li>
+            <li><span style="color: rgb(251, 0, 255);">Status:</span> Single</li>
+            </ul>
+          </figcaption>
+        </div>
+      </div>
+      <!--all about me-->
+      <div class="about-col-2">
+        <h1 class="sub-title" style="color: palegoldenrod;"><bold>Description</bold></h1>
+        <div class="about-section">
+          <img src="./assets/images/o.jpg" alt="About Me Image">
+          <div class="about-text">
+            <h1> <bold><span style="color: rgb(255, 128, 0);">Objective</span></bold></h1>
+            <p>I am excited to apply my innovative abilities and skills to the completion of the tasks. To acquire a solid position in a competitive and creative engineering environment that will profit from my innovative ideas, experience, and collegiate abilities while also adding value to organizational operations.</p>
+          </div>
+        </div>
+
+      </div class="tab-titles">
+     <br>
+
+      <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+       <p class="tab-links" onclick="opentab('education')">Education</p>
+       <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+
+        </div>
+        <div class="tab-contents active-tab" id="achievements">
+            <ul>
+                <li> &#8680;<span style="color: sandybrown;">Delivered a paper at the "Springer 2nd International Conference on Next Generation Computing Systems" at PSG Institute.</span></li>
+
+                 <li>  &#8680; Presented a paper on blind stick using Arduino in the first national conference (ETISSC-22).</li>
+                  <li> &#8680; <span style="color: sandybrown;">Throughout my schooling, I received Best student awards.</span></li>
+                    <li> &#8680;  I had received medals and diplomas in athletics.</li>
+                      <li> &#8680; <span style="color: sandybrown;">I am the first graduate engineer in my family.</span> </li>
+                        <li> &#8680;  Presented a presentation titled in online voting system utilizing mobile app at the first national conference on innovative data engineering applications (NCIDEA-2021).
+                        </li>   
+            </ul>
+       </div>
+       <div class="tab-contents" id="certifications">
+            <ul>
+                <li>1.<span style="color:yellowgreen;">Programming in Java</span>  </li>
+                 <li>2.<span style="color:yellowgreen;"> Attended a workshop on artificial intelligence.</span></li>
+                  <li>3.<span style="color:yellowgreen;">HTML, CSS, and JavaScript.</span></li>
+                  <li>4.<span style="color:yellowgreen;"> SQL Certification</span> </li>
+                  <li>5.<span style="color:yellowgreen;">Python Certification</span></li>
+               
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+              <li><span style="color:orangered;">2024 Current</span><br>Started a Internship at NSIC </li>
+              <li><span style="color:orangered;">2023</span><br>Internship at Naan mudhalvar Scheme </li>
+              <li><span style="color:orangered;">2023</span><br>Participated in a Smart India Hackathon</li>
+          </ul>
+      </div>
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span style="color:orangered;">2020 -2024</span><br>Vel tech high tech
+                  Dr.Rangarajan Dr.Sakunthala
+                  Engineering college, Avadi<br>
+                  <span style="color:bisque;">B.tech , Information Technology</span><br>
+                  89.4%
+                  </li>
+                <li><span style="color:orangered;">2019-2020</span><br>Bharathidhasan matriculation
+                  hr sec school kanchipuram<br>
+                  <span style="color:bisque;">HSC</span><br>
+                  75.3%</li>
+                <li><span style="color:orangered;">2017-2018</span><br>Bharathidhasan matriculation
+                  hr sec school kanchipuram<br>
+                  <span style="color:bisque;">SSLC</span><br>
+                  80.6%</li>
+            </ul>
+        </div>
+    </div>
+
+  </div>
+  </div></div>
+</section>
+  <!---services--->
+  <!---wait--
+   <div class="tab-contents" id="experience">
+    <ul>
+             <li><span>2021 Current</span><br>UI/UX Design Training at ET
+            Institute</li>
+             <li><span>2019 2021</span><br>Team lead at StarApp LLC.</li>
+             <li><span>2017-2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+   </ul> -->
+
+
+   <!--skills-->
+   <div class="main">
+    <section id="s2">
+
+    <h1 style="color: palegoldenrod;">Skills</h1>
+    <hr>
+    
+    <marquee><h2 style="color: #F9629F;">Learn to hide your need and Show Your Skill!..</h2></marquee>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"><bold>All</bold></button>
+      <button class="btn" onclick="filterSelection('nature')"><bold>Hard Skills</bold></button>
+      <button class="btn" onclick="filterSelection('cars')"><bold>Soft Skills</bold></button>
+      <button class="btn" onclick="filterSelection('people')"><bold>Other</bold></button>
+    </div>
+    
+    <!-- skills Gallery Grid -->
+    <div class="row">
+      
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/html1.jpg" alt="Lights" style="width:100%" style="height: 100%;">
+          <h4>HTML</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+          <img src="./assets/images/ui1.jpg" alt="Mountains" style="width:100%" style="height: 100%;">
+          <h4>UI/UX</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/css1.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>CSS</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/java2.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>JAVA</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/jdbc2.png" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>JDBC Connectivity</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/js.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>Java Script</h4>
+          <p></p>
+        </div>
+      </div>
+
+      
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/sql.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>SQL</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/ex.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>Excel</h4>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="column nature">
+        <div class="content">
+        <img src="./assets/images/pow.jpg" alt="Nature" style="width:100%" style="height: 100%;">
+          <h4>Power BI</h4>
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="column cars">
+        <div class="content">
+          <img src="./assets/images/pro.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Problem Solving</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="./assets/images/log.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Logical Thinking</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src="./assets/images/hard.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Hard Working</h4>
+          <p></p>
+        </div>
+      </div>
+    
+      <div class="column people">
+        <div class="content">
+          <img src="./assets/images/ath.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Athletics</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="./assets/images/story.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Story Writing</h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="column people">
+        <div class="content">
+        <img src="./assets/images/ima.jpg" alt="Car" style="width:100%" style="height: 100%;">
+          <h4>Imagination</h4>
+          <p></p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+  </section>
+    <hr>
+    
+    <!-- END MAIN -->
+    </div>
+    
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+  
+  <!--portfolio-->
+  <div id="portfolio">
+
+    <div class="container">
+      
+      <section id="su3">
+        
+    <h1 style="color: palegoldenrod;">Projects</h1>
+    
+    <br>
+    <marquee><h2 style="color: #F9629F;"> “A creative project is a moving target. You <mark>never end up</mark> where you start.”</h2></marquee>
+    <br>
+    <br>
+    <hr>
+    
+    <div class="work-list">
+    
+    <div class="work">
+    
+    <img src="./assets/images/ev.jpeg">
+    
+    <div class="layer">
+      
+    
+    <h3>Online Voting System</h3>
+
+    
+    <p style="color: white;">The online voting system requires consumers to register and vote online.
+      The system aims to be both secure and user-friendly.
+      
+      </p>
+    
+    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    <div class="work">
+    
+    <img src="./assets/images/blind.jpg">
+    
+    <div class="layer">
+    
+    <h3 >Blind Stick Using Aurduino</h3>
+    
+    <p style="color: white;">Smart Blind Stick is an interactive device designed to assist the blind navigate more simply and safely. 
+    </p><a href="#"><i class="fas fa-external-link-alt"></i></a>
+    
+    </div>
+    
+    </div>
+    
+    <div class="work">
+    
+    <img src="./assets/images/cy.png">
+    
+    <div class="layer">
+    
+    
+    <h3 >A web based cyber offence delineating System</h3>
+    
+    <p style="color: white;">Cybercrime refers to a wide range of criminal activities carried out using digital devices and/or networks. The user can file a complaint.
+    </p>
+    
+    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+    
+    </div>
+    
+    </div>
+    <div class="work">
+    
+      <img src="./assets/images/plant.jpg">
+      
+      <div class="layer">
+      
+      
+      <h3>Floral Disease Detcetion App</h3>
+      
+      <p style="color: white;">The application of ML and DL in plant disease identification has grown in prominence, with promising results in accurately diagnosing plant illnesses from digital photos.
+      </p>
+      
+      <a href="#"><i class="fas fa-external-link-alt"></i></a>
+      
+      
+      </div>
+      
+      </div>
+   
+    </div>
+    <hr>
+    </div></div>
+  </section>
+    <!--services-->
+    
+    <div class="card">
+      <section id="s4">
+      <h1 style="color: palegoldenrod;">Services</h1>
+      <br>
+
+     <img src="./assets/images/p1.jpg" alt="supriyaa" style="width:100%">
+     <h2 style="color: plum;">Supriyaa. D</h2>
+      </section>
+     <p class="title"> Freelancing</p>
+     <p><li>Web development</li></p>
+     <li>UI/UX Designing</li>
+     <div style="margin: 24px 0;">
+      <a href="https://www.instagram.com/healer1414?igsh=MTNsZWszOHNnd2w2cg=="><img src="./assets/images/in.jpg" alt="insta" width="30px" height="30px"> </a> 
+       <a href="https://www.linkedin.com/in/supriyaa-d-b61211231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./assets/images/link.jpg" alt="linkdn" width="30px" height="30px"> </a> 
+       <a href="https://github.com/supriyaa14"><i class="fa fa-github"><img src="./assets/images/git.jpg" alt="git" width="30px" height="30px"> </a> 
+     </div>
+     <p><button class="sup" ><a href="#s5">Contact</a></button></p>
+  
+    
+   </div>
+   
+ <hr>
+   
+    <!--contacts-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+    
+          <div class="contact-left col-md-6">
+            <section id="s5">
+            <h1 class="sub-title" style="color: palegoldenrod;">Contact Me</h1>
+    
+            <p><i class="fas fa-paper-plane"></i> supriyaasai1414@gmail.com <img src="./assets/images/gmail.jpg" alt="gmail" width="30px" height="30px"> </p>
+            <section id="w">
+            <p><i class="fas fa-phone-square-alt"></i>9566782190 <img src="./assets/images/what.jpg" alt="whatsapp" width="30px" height="30px"> </p>
+          </section>
+            <div class="social-icons">
+             
+              <a href="https://www.linkedin.com/in/supriyaa-d-b61211231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i style="font-size:24px" class="fa" 
+                >LinkedIn &#xf08c;</i></a>
+            </div>
+    
+            <a href="./assets/images/CV_2024-01-13-053812.pdf" download class="btn btn2">Download CV</a>
+          </div>
+    
+          <div class="contact-right col-md-6">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <div id="msg"></div>
+          </div>
+        </section>
+        </div>
+      </div>
+    </div>
+        
+        <div class="copyright">
+            <p>Copyright  &copy; Supriyaa Dhamu. Made with<i class="fas fa-heart"></i> Complete &#128712;</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+          for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab"); 
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+          }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");      
+        function openmenu(){     
+        sidemeu.style.right = "0";      
+        }      
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }             
+        </script>
+        <script>
+       document.addEventListener('DOMContentLoaded', function () {
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxN_ro6HAtJkWBFtdAAMl6queQ6Ts5wN8djKV-_mgS-cBRmxNIqWXorsHoGYKPv0MqA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 300);
+                    console.log('Success!', response);
+                    form.reset()
+                })
+                .catch(error => {
+                    msg.innerHTML = "Error sending message";
+                    console.error('Error!', error.message);
+                });
+        });
+    });
+</script>
+
+</body>
+</html>

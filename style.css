@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  #s0{
+    margin-top: 80px;
+  }
+  body {
+    background-image: url(./assets/images/ss.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/d3.jpg);
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .container {
+    padding: 10px 10%;
+    
+
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+    position: sticky;
+    top: 0; /* Add this line to specify the sticky position */
+}
+  
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .header-text {
+    margin: 20%;
+    font-size: 30px;
+  }
+  
+  .header-text h1 {
+    margin-top: 20px;
+    font-size: 60px;
+  }
+  
+  .header-text h1 span {
+    color: blue;
+  }
+  #about{
+    padding: 80px 0;
+    color: #ababab;
+
+  }
+  .row{
+    display: flex;
+    justify-self: space-between;
+    flex-wrap:wrap ;
+  }
+  /* General styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color:rgb(54, 69, 79);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn2 {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+/* About section styles */
+#about {
+  padding: 50px 0;
+}
+.about-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 50px;
+  height: 600px; /* Adjust as needed */
+}
+
+.about-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Or any desired text color */
+  text-shadow: 2px 2px 5px black; /* Optional for better readability */
+}
+
+.about-col-1 {
+  width: 50%;
+  height:70%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-col-2 {
+  width: 50%;
+  margin-top: 20px;
+  float: right;
+}
+
+.about-col-1 img {
+  width: 70%;
+  height:120%;
+  margin-bottom: 50px;
+}
+
+.tab-titles {
+  margin-top: 20px;
+}
+
+.tab-links {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: pink;/* Light gray background for tabs */
+  color:mediumvioletred;
+  margin-right: 0px;
+  margin-top: 80px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.active-link {
+  /* Dark background for active tab */
+  background-image: url(./assets/images/t1.png);
+  color:darkorange; /* White text for active tab */
+}
+
+.tab-contents {
+  display: none;
+  padding: 10px 10px 10px 10px;
+  border-top: 3px solid #eee; /* Light gray border for content */
+}
+
+.active-tab {
+  display: block;
+}
+
+
+
+/* Services section styles */
+
+#services {
+  padding: 50px 0;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-list div {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-list i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* ... (other CSS rules for the rest of the sections) */
+
+  /* General styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+.sub-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color:whitesmoke;
+  color:#FF00FF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn2 {
+  background-color: #eec0c8;
+  color: #eec0c8;
+  border: 1px solid #eec0c8;
+}
+
+/* Portfolio section styles */
+#portfolio {
+  padding: 50px 0;
+}
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work {
+  width: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.work img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.work .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#FFC0CB;
+}
+
+/* ... (other CSS rules for the rest of the sections) */
+/* Contact section styles */
+#contact {
+  padding: 50px 0;
+}
+
+.contact-left {
+  width: 40%;
+  float: left;
+}
+
+.contact-right {
+  width: 60%;
+  float: right;
+}
+
+/* Contact information */
+.contact-left p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.contact-left p i {
+  margin-right: 10px;
+  color: #333333dd;
+}
+
+/* Social icons */
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: burlywood;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #1855e3; /* Darker color on hover */
+}
+
+/* Form styles */
+.contact-right form {
+  padding: 20px;
+  border: 1px solid #eee;
+  background-image: url(./assets/images/t4.jpg);
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.contact-right button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-right button[type="submit"]:hover {
+  background-color: green; /* Darker color on hover */
+}
+
+/* Interactive elements */
+.contact-left a.btn2 {
+  text-decoration: none;
+  background-image: url(./assets/images/t2.jpg);
+  border: 1px solid palevioletred;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.contact-left a.btn2:hover {
+  background-color: white;
+  color: #fff;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+.copyright i {
+  color: red; /* Heart icon in red */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f170;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgba(255, 255, 255, 0.44);
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: rgba(255, 255, 255, 0.455);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+.sup {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color:yellow;
+  background-color:seagreen;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color:white;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+#msg{
+  color:red;
+  margin-bottom: -40px;
+  display: block;
+  
+}
